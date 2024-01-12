@@ -1,11 +1,1 @@
-name: Stars
 
-on:
-  watch:
-    types: [started]
-
-jobs:
-  notify:
-    uses: BirjuVachhani/shared-workflows/.github/workflows/stars.yml@main
-    secrets:
-      ntfy_url: ${{ secrets.NTFY_TOPIC }}
